@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+    <title>Day 2</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/prism.css">
+    <link rel="stylesheet" href="../css/styles.css">
+
+</head>
+<body class="theme links">
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bootcamp-navbar" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://jperez4509.github.io/working_with_wordpress/">Geekwise – Working with WordPress</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bootcamp-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="../index.html">Course Outline</a></li>
+        <li><a href="../links.html">Handy Links</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Lessons <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="one.html">Day 1</a></li>
+            <li><a href="two.html">Day 2</a></li>
+            <li><a href="three.html">Day 3</a></li>
+            <!-- <li><a href="four.html">Day 4</a></li>
+            <li><a href="five.html">Day 5</a></li>
+            <li><a href="six.html">Day 6</a></li>
+            <li><a href="seven.html">Day 7</a></li>
+            <li><a href="eight.html">Day 8</a></li>
+            <li><a href="nine.html">Day 9</a></li>
+            <li><a href="ten.html">Day 10</a></li>
+            <li><a href="eleven.html">Day 11</a></li> -->
+            <li role="separator" class="divider"></li>
+            <li><a href="final.html">Final Project</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>  <!-- /.navbar-collapse -->
+  </div>   <!-- /.container-fluid -->
+</nav>
+
+<div class="container content">
+  <h1 class="row text-center hdr">Day 2</h1>
+  <div class="row">
+    <h2 class="col-md-3">Concepts</h2>
+    <div class="col-md-9">
+      <ul class="point">
+        <li>Pages</li>
+        <li>Post</li>
+        <li>Categories</li>
+        <li>Tags</li>
+        <li>Comments</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row"><!-- Pages -->
+    <h2 class="col-md-3">Pages</h2>
+    <div class="col-md-9">
+      <p class="point">Select English as your language of choice:</p>
+      <img src="../img/two/wp-stepone.jpg" alt="How WordPress Works Inforgraphic" class="img-responsive point">
+      <p class="point">Site Title can be anything but for this class we will name it Geek WordPress. Unsername should be root. Password should be secret so we can easily remember it (NOTE: this is only for local test sites, not for client sites or live sites). Confirm the weak password. Lastly, enter your email.</p>
+      <img src="../img/two/wp-steptwo.jpg" alt="How WordPress Works Inforgraphic" class="img-responsive point">
+      <p class="point">Congrats! You have officially created a WordPress site.</p>
+      <img src="../img/two/wp-stepthree.jpg" alt="How WordPress Works Inforgraphic" class="img-responsive point">
+      <img src="../img/two/howwordpressworks.jpg" alt="How WordPress Works Inforgraphic" class="img-responsive point" style="padding-top: 50px;">
+    </div>
+  </div><!-- end Pages -->
+
+  <div class="row"><!-- Post -->
+    <div class="col-md-3">
+      <h2>Post</h2>
+      <img src="../img/two/apache_logo.png" alt="Apache Server Logo" class="img-responsive" style="padding: 20px 10px;">
+    </div>
+    <div class="col-md-9">
+      <p class="point"><a href="https://httpd.apache.org/">Apache</a> is the most widely used web server software. Developed and maintained by <a href="http://www.apache.org/">Apache Software Foundation</a>, Apache is an open source software available for free. It runs on 67% of all webservers in the world. It is fast, reliable, and secure. It can be highly customized to meet the needs of many different environments by using extensions and modules. Most WordPress hosting providers use Apache as their web server software. However, WordPress can run on other web server software as well.</p>
+    </div>
+  </div><!-- end Post -->
+
+  <div class="row"><!-- Categories -->
+    <div class="col-md-3">
+      <h2>Categories</h2>
+      <img src="../img/two/MySQL.svg.png" alt="MySQL database Logo" class="img-responsive" style="padding: 20px 10px;">
+    </div>
+    <div class="col-md-9">
+      <p class="point">MySQL is an open source relational database management system. It runs as a server and allows multiple users to manage and create numerous databases. It is a central component in the LAMP stack of open source web application software that is used to create websites. LAMP stands for Linux, Apache, MySQL, and PHP. Most WordPress installations use the LAMP stack because it is open source and works seamlessly with WordPress.</p>
+      <p class="point">WordPress requires MySQL to store and retrieve all of its data including post content, user profiles, and custom post types. Most web hosting providers already have MySQL installed on their web servers as it is widely used in many open source web applications such as WordPress.</p>
+      <div class="point">
+        <ul class="list">
+          <li><strong>wp_commentmeta :</strong> This table contains meta information about comments posted on a WordPress website. This table has four fields meta_id, comment_id, meta_key, and meta_value. Each meta_id is related to a comment_id. One example of comment meta information stored is the status of comment (approved, pending, trash, etc).</li>
+          <li><strong>wp_comments :</strong> As the name suggests this table contains your WordPress comments. It contains comment author name, url, email, comment, etc.</li>
+          <li><strong>wp_links :</strong> To manage blogrolls create by earlier versions of WordPress or the Link Manager plugin.</li>
+          <li><strong>wp_options :</strong> This table contains most of your WordPress site wide settings such as: site url, admin email, default category, posts per page, time format, and much much more. The options table is also used by numerous WordPress plugins to store plugin settings.</li>
+          <li><strong>wp_postmeta :</strong> This table contains meta information about your WordPress posts, pages, and custom post types. Example of post meta information would be which template to use to display a page, custom fields, etc. Some plugins would also use this table to store plugin data such as WordPress SEO information.</li>
+          <li><strong>wp_posts :</strong> The name says posts but actually this table contains all post types or should we say content types. This table contains all your posts, pages, revisions, and custom post types.</li>
+          <li><strong>wp_terms :</strong> WordPress has a powerful taxonomy system that allows you to organize your content. Individual taxonomy items are called terms and they are stored in this table. Example, your WordPress categories and tags are taxonomies, and each category and tag inside them is a term.</li>
+          <li><strong>wp_term_relationships :</strong> This table manages relationship of WordPress post types with terms in wp_terms table. For example this is the table that helps WordPress determine post X is in Y category.</li>
+          <li><strong>wp_term_taxonomy :</strong> This table defines taxonomies for terms defined in wp_terms table. For example if you have a term “WordPress Tutorials“, then this table contains the data that says it is associated with a taxonomy categories. In short this table has the data that helps WordPress differentiate between which term is a category, which is a tag, etc.</li>
+          <li><strong>wp_usermeta :</strong> Contains meta information about Users on your website.</li>
+          <li><strong>wp_users :</strong> Contains User information like username, password, user email, etc.</li>
+
+        </ul>
+      </div>
+
+    </div>
+  </div><!-- end Categories -->
+
+  <div class="row"><!-- Tags -->
+    <div class="col-md-3">
+      <h2>Tags</h2>
+      <img src="../img/two/logo-og.png" alt="phpMyAdmin Logo" class="img-responsive" style="padding: 20px 10px;">
+    </div>
+    <div class="col-md-9">
+      <p class="point"><a href="https://www.phpmyadmin.net/" target="_blank">phpMyAdmin</a> is an open source software that provides a web based graphical user interface to manage your mySQL database. Most WordPress hosting providers have phpMyAdmin installed in their control panel. This allows users to easily access the database and perform common database management tasks.</p>
+      <div class="point">
+        <pre class="language-php">
+          <code class="language-php">
+<span class="token comment" spellcheck="true">// ** MySQL settings - You can get this info from your web host ** //</span>
+<span class="token comment" spellcheck="true">/** The name of the database for WordPress */</span>
+<span class="token keyword">define</span><span class="token punctuation">(</span><span class="token string">'DB_NAME'</span><span class="token punctuation">, </span><span class="token string">'database_name_here'</span><span class="token punctuation">);</span>
+
+<span class="token comment" spellcheck="true">/** MySQL database username */</span>
+<span class="token keyword">define</span><span class="token punctuation">(</span><span class="token string">'DB_USER'</span><span class="token punctuation">, </span><span class="token string">'username_here'</span><span class="token punctuation">);</span>
+
+<span class="token comment" spellcheck="true">/** MySQL database password */</span>
+<span class="token keyword">define</span><span class="token punctuation">(</span><span class="token string">'DB_PASSWORD'</span><span class="token punctuation">, </span><span class="token string">'password_here'</span><span class="token punctuation">);</span>
+
+<span class="token comment" spellcheck="true">/** MySQL hostname */</span>
+<span class="token keyword">define</span><span class="token punctuation">(</span><span class="token string">'DB_HOST'</span><span class="token punctuation">, </span><span class="token string">'localhost'</span><span class="token punctuation">);</span>
+
+<span class="token comment" spellcheck="true">/** Database Charset to use in creating database tables. */</span>
+<span class="token keyword">define</span><span class="token punctuation">(</span><span class="token string">'DB_CHARSET'</span><span class="token punctuation">, </span><span class="token string">'utf8'</span><span class="token punctuation">);</span>
+
+<span class="token comment" spellcheck="true">/** The Database Collate type. Don't change this if in doubt. */</span>
+<span class="token keyword">define</span><span class="token punctuation">(</span><span class="token string">'DB_COLLATE'</span><span class="token punctuation">, </span><span class="token string">''</span><span class="token punctuation">);</span>
+            </code>
+        </pre>
+      </div>
+      <p class="point">You can access your website's phpMyAdmin by going to <code>https://mydomain.com/phpmyadmin</code></p>
+    </div>
+  </div><!-- end Tags -->
+
+  <div class="row"><!-- Comments -->
+    <h2 class="col-md-3">Comments</h2>
+    <div class="col-md-9">
+      <p class="point">WordPress uses the PHP programming language to store and retrieve data from the MySQL database. To retrieve data from the database, WordPress runs SQL queries to dynamically generate content. SQL stands for Structured Query Language and is the programming language typically used to query databases.</p>
+      <p class="point">Nice, but what does that mean? An example:</p>
+      <div class="point">
+        <pre class="language-markup">
+          <code class="language-markup">
+<span class="token punctuation"><</span><span class="token tag">!DOCTYPE HTML</span><span class="token punctuation">></span>
+<span class="token punctuation"><</span><span class="token tag">html</span><span class="token punctuation">></span>
+    <span class="token punctuation"><</span><span class="token tag">head</span><span class="token punctuation">></span>
+        <span class="token punctuation"><</span><span class="token tag">title</span><span class="token punctuation">></span>Example<span class="token punctuation"><</span><span class="token punctuation">/</span><span class="token tag">title</span><span class="token punctuation">></span>
+    <span class="token punctuation"><</span><span class="token punctuation">/</span><span class="token tag">head</span><span class="token punctuation">></span>
+    <span class="token punctuation"><</span><span class="token tag">body</span><span class="token punctuation">></span>
+
+        <span class="token punctuation"><</span><span class="token punctuation">?</span><span class="token tag">php</span>
+            <span class="token keyword">echo</span><span class="token string"> "Hi, I'm a PHP script!"</span><span class="token punctuation">;</span>
+        <span class="token punctuation"><</span><span class="token punctuation">?</span>
+
+    <span class="token punctuation"><</span><span class="token punctuation">/</span><span class="token tag">body</span><span class="token punctuation">></span>
+<span class="token punctuation"><</span><span class="token punctuation">/</span><span class="token tag">html</span><span class="token punctuation">></span>
+          </code>
+        </pre>
+      </div>
+
+    </div>
+  </div><!-- end Comments -->
+
+  <div class="row"><!--Quote of the day-->
+    <h2 class="col-md-3">Quote of the Day</h2>
+    <div class="col-md-9">
+      <ul class="point">
+        <li>“Computers are good at following instructions, but not at reading your mind.”</li>
+        <li>-<a href="https://en.wikipedia.org/wiki/Donald_Knuth" target="_blank">Donald Knuth</a></li>
+      </ul>
+    </div>
+  </div><!--End Quote of the day-->
+</div><!-- end Container -->
+
+
+
+
+    <!-- start of javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/prism.js"></script>
+</body>
+</html>
