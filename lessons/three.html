@@ -109,32 +109,13 @@
       <h2>Tags</h2>
     </div>
     <div class="col-md-9">
-      <p class="point"><a href="https://www.phpmyadmin.net/" target="_blank">phpMyAdmin</a> is an open source software that provides a web based graphical user interface to manage your mySQL database. Most WordPress hosting providers have phpMyAdmin installed in their control panel. This allows users to easily access the database and perform common database management tasks.</p>
-      <div class="point">
-        <pre class="language-php">
-          <code class="language-php">
-<span class="token comment" spellcheck="true">// ** MySQL settings - You can get this info from your web host ** //</span>
-<span class="token comment" spellcheck="true">/** The name of the database for WordPress */</span>
-<span class="token keyword">define</span><span class="token punctuation">(</span><span class="token string">'DB_NAME'</span><span class="token punctuation">, </span><span class="token string">'database_name_here'</span><span class="token punctuation">);</span>
-
-<span class="token comment" spellcheck="true">/** MySQL database username */</span>
-<span class="token keyword">define</span><span class="token punctuation">(</span><span class="token string">'DB_USER'</span><span class="token punctuation">, </span><span class="token string">'username_here'</span><span class="token punctuation">);</span>
-
-<span class="token comment" spellcheck="true">/** MySQL database password */</span>
-<span class="token keyword">define</span><span class="token punctuation">(</span><span class="token string">'DB_PASSWORD'</span><span class="token punctuation">, </span><span class="token string">'password_here'</span><span class="token punctuation">);</span>
-
-<span class="token comment" spellcheck="true">/** MySQL hostname */</span>
-<span class="token keyword">define</span><span class="token punctuation">(</span><span class="token string">'DB_HOST'</span><span class="token punctuation">, </span><span class="token string">'localhost'</span><span class="token punctuation">);</span>
-
-<span class="token comment" spellcheck="true">/** Database Charset to use in creating database tables. */</span>
-<span class="token keyword">define</span><span class="token punctuation">(</span><span class="token string">'DB_CHARSET'</span><span class="token punctuation">, </span><span class="token string">'utf8'</span><span class="token punctuation">);</span>
-
-<span class="token comment" spellcheck="true">/** The Database Collate type. Don't change this if in doubt. */</span>
-<span class="token keyword">define</span><span class="token punctuation">(</span><span class="token string">'DB_COLLATE'</span><span class="token punctuation">, </span><span class="token string">''</span><span class="token punctuation">);</span>
-            </code>
-        </pre>
-      </div>
-      <p class="point">You can access your website's phpMyAdmin by going to <code>https://mydomain.com/phpmyadmin</code></p>
+      <p class="point">Tags are meant to describe specific details of your posts. Think of these as your site’s index words. They are the micro-data that you can use to micro-categorize your content. Tags are not hierarchical.</p>
+      <p class="point">For example if you have a personal blog where you write about your life. Your categories can be something like: Music, Food, Travel, Rambling, and Books. Now when you write a post about something that you ate, you will add it in the Food category. You can add tags like pizza, pasta, steak etc.</p>
+      <p class="point">One of the biggest difference between tags and categories is that you MUST categorize your post. You are not required to add any tags. If you do not categorize your post, then it will be categorized under the “uncategorized” category. People often rename the uncategorized category to something like Other, ramblings etc.</p>
+      <p class="point">Another difference is the way your category and tags permalinks (urls) look. If you are using a custom permalink (URL) structure, then your base prefix will look different. Example:</p>
+      <p class="point">http://yoursite.com/category/food/</p>
+      <p class="point">vs.</p>
+      <p class="point">http://yoursite.com/tag/food/</p>
     </div>
   </div><!-- end Tags -->
 
