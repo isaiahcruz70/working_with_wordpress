@@ -155,6 +155,18 @@
     <div class="col-md-9">
       <p class="point">A WordPress child theme is a WordPress theme that inherits its functionality from another WordPress theme, the parent theme. Child themes are often used when you want to customize or tweak an existing WordPress theme without losing the ability to upgrade that theme. In the past, there was no easy way of updating WordPress themes without losing all the custom styling and changes that you had made. This becomes chaos when all the sudden you find out a widely used script in popular themes has a major exploit, and you need to update your themes ASAP. It becomes a tough choice because on one hand, you would lose all the custom styles if you update. On the other hand, you risk your site getting hacked if you don’t update fast enough.</p>
       <p class="point">The core team and the community decided to solve this problem by introducing the concept of parent theme and child theme. A child theme in WordPress would inherit all the functionality, features, and the code of the parent theme without making any changes to the parent theme itself. This allowed users to change the styling of the parent theme and add/modify features without losing the ability to update the parent theme.</p>
+      <p class="point">There are a few reasons why you would want to use a child theme:</p>
+      <div class="point">
+        <ul class="list">
+          <li>If you modify a theme directly and it is updated, then your modifications may be lost. By using a child theme you will ensure that your modifications are preserved.</li>
+          <li>Using a child theme can speed up development time.</li>
+          <li>Using a child theme is a great way to learn about WordPress theme development.</li>
+        </ul>
+      </div>
+      <h3 class="point">How to Create a Child Theme</h3>
+      <p class="point">The first step in creating a child theme is to create the child theme directory, which will be placed in wp-content/themes. It is recommended (though not required, especially if you're creating a theme for public use) that the name of your child theme directory is appended with '-child'. You will also want to make sure that there are no spaces in your child theme directory name, which may result in errors. In the screenshot above we have called our child theme 'twentyfifteen-child', indicating that the parent theme is the Twenty Fifteen theme.</p>
+      <p class="point"><a href="https://codex.wordpress.org/Child_Themes" target="_blank">https://codex.wordpress.org/Child_Themes</a></p>
+
       <div class="point">
         <p class="excercise"> Create a new category with the title: geekwise. Make sure the slug makes sense, and  add a description. Then create another category with the parent of 'geekwise'.</p>
       </div>
